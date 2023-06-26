@@ -1,0 +1,60 @@
+* /*al poner el * significa que los cambios se harán a todo el documento*/
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body /*funcion para el texto*/
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.main-image
+{
+    background: url("imagen/Forest.jpg") ;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh; /*alto minimo*//*vh es una unidad de medida relativa que representa el porcentaje de la altura total de la ventana del navegador. El valor 100vh significa que el elemento tendrá una altura mínima igual al 100% de la altura visible del navegador.*/
+    display: flex; 
+    flex-direction: column; /*al ser varios elementos los ordenamos de arriba hacia abajo, que se acomoden como columna*/
+    align-items: center; /*posicionamos hacia el centro*/
+    justify-content: center; /*justificamos al centro*/
+    /*La sintaxis 0 1rem se refiere al valor del relleno en sentido de las agujas del reloj, comenzando desde la parte superior y continuando en sentido horario. En este caso, se establece un relleno de 0 en la parte superior e inferior, y un relleno de 1rem en los lados izquierdo y derecho.*/
+    padding: 0 1rem; /*El valor 1rem indica que se está utilizando una unidad de medida relativa. En este caso, rem (root em) se basa en el tamaño de fuente establecido en el elemento raíz o en el elemento HTML. Por ejemplo, si el tamaño de fuente del elemento raíz es de 16 píxeles, entonces 1rem será igual a 16 píxeles.*/
+    text-align: center;
+}
+
+.main-image h1
+{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-image h1 .strike /*funcion para tachar la palabra World*/
+{
+    text-decoration: line-through;
+}
+
+.main-image p
+{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.main-image .btn /*funcion para el botón*/
+{
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase; /*se cambia la palabra a mayúscula*/
+    font-weight: bold; /*texto en negrita*/
+    cursor: pointer;
+    justify-content: ;
+}
